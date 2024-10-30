@@ -1,3 +1,12 @@
 function skillMember() {
-    console.log('marcin');
+    return {
+      restrict: 'E',
+      templateUrl: 'modules/member.html',
+      controller: 'Skill',
+      controllerAs: 'vm',
+      bindToController: true,
+      scope:{
+        member: '='
+      }
+    }
 }
